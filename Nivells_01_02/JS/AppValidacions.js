@@ -46,6 +46,7 @@ function crearCompte() {
 	var inputPassword = document.forms["formRegister"]["validacioPassword"];
 	var inputPasswordMatch = document.forms["formRegister"]["validacioPasswordMatch"];
 	var gridCheck = document.forms["formRegister"]["gridCheck"];
+	let okFeedback = "Looks good!";
 
 	//Què passa si es deixa en blanc algun input, o si és incorrecte:
 	if (inputFirstName.value == "") {
@@ -54,7 +55,7 @@ function crearCompte() {
 		acumErrores++;
 	} else {
 		inputFirstName.classList.add("is-valid");
-		document.getElementById("okFirstName").textContent = "Looks good!";
+		document.getElementById("okFirstName").textContent = okFeedback;
 	}
 
 	if (inputLastName.value == "") {
@@ -63,7 +64,7 @@ function crearCompte() {
 		acumErrores++;
 	} else {
 		inputLastName.classList.add("is-valid");
-		document.getElementById("okLastName").textContent = "Looks good!";
+		document.getElementById("okLastName").textContent = okFeedback;
 	}
 
 	if (inputProvince.value == "") {
@@ -72,7 +73,7 @@ function crearCompte() {
 		acumErrores++;
 	} else {
 		inputProvince.classList.add("is-valid");
-		document.getElementById("okProvince").textContent = "Looks good!";
+		document.getElementById("okProvince").textContent = okFeedback;
 	}
 
 	if (inputEmail.value == "") {
@@ -85,7 +86,7 @@ function crearCompte() {
 		acumErrores++;
 	} else {
 		inputEmail.classList.add("is-valid");
-		document.getElementById("okEmail").textContent = "Looks good!";
+		document.getElementById("okEmail").textContent = okFeedback;
 	}
 
 	if (inputPassword.value == "") {
@@ -98,7 +99,7 @@ function crearCompte() {
 		acumErrores++;
 	} else {
 		inputPassword.classList.add("is-valid");
-		document.getElementById("okPassword").textContent = "Looks good!";
+		document.getElementById("okPassword").textContent = okFeedback;
 	}
 
 	if (inputPasswordMatch.value == "") {
@@ -111,7 +112,7 @@ function crearCompte() {
 		acumErrores++;
 	} else {
 		inputPasswordMatch.classList.add("is-valid");
-		document.getElementById("okPasswordMatch").textContent = "Looks good!";
+		document.getElementById("okPasswordMatch").textContent = okFeedback;
 	}
 
 	if (!gridCheck.checked) {
